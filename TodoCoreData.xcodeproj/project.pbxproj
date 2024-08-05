@@ -18,6 +18,8 @@
 		D3A32C7F2C60C23D002F91B3 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A32C7C2C60C23D002F91B3 /* TaskTableViewCell.swift */; };
 		D3A32C822C60ED57002F91B3 /* TaskItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A32C802C60ED57002F91B3 /* TaskItem+CoreDataClass.swift */; };
 		D3A32C832C60ED57002F91B3 /* TaskItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A32C812C60ED57002F91B3 /* TaskItem+CoreDataProperties.swift */; };
+		D3A32C862C60F0F0002F91B3 /* AddTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3A32C852C60F0F0002F91B3 /* AddTaskViewController.xib */; };
+		D3A32C872C60F0F0002F91B3 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A32C842C60F0F0002F91B3 /* AddTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		D3A32C7D2C60C23D002F91B3 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		D3A32C802C60ED57002F91B3 /* TaskItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D3A32C812C60ED57002F91B3 /* TaskItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D3A32C842C60F0F0002F91B3 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		D3A32C852C60F0F0002F91B3 /* AddTaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTaskViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 			children = (
 				D3A32C5D2C60B9F3002F91B3 /* ViewController.swift */,
 				D3A32C5F2C60B9F3002F91B3 /* Main.storyboard */,
+				D3A32C842C60F0F0002F91B3 /* AddTaskViewController.swift */,
+				D3A32C852C60F0F0002F91B3 /* AddTaskViewController.xib */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -175,6 +181,7 @@
 				D3A32C7E2C60C23D002F91B3 /* TaskTableViewCell.xib in Resources */,
 				D3A32C662C60B9F6002F91B3 /* Assets.xcassets in Resources */,
 				D3A32C692C60B9F6002F91B3 /* Base in Resources */,
+				D3A32C862C60F0F0002F91B3 /* AddTaskViewController.xib in Resources */,
 				D3A32C612C60B9F3002F91B3 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3A32C7F2C60C23D002F91B3 /* TaskTableViewCell.swift in Sources */,
+				D3A32C872C60F0F0002F91B3 /* AddTaskViewController.swift in Sources */,
 				D3A32C5E2C60B9F3002F91B3 /* ViewController.swift in Sources */,
 				D3A32C5A2C60B9F3002F91B3 /* AppDelegate.swift in Sources */,
 				D3A32C642C60B9F3002F91B3 /* TodoCoreData.xcdatamodeld in Sources */,

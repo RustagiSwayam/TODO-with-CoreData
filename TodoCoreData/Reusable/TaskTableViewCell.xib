@@ -9,15 +9,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="KGk-i7-Jjw" customClass="TaskTableViewCell" customModule="TodoCoreData" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="382" height="92"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="TaskTableViewCell" customModule="TodoCoreData" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="104"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="382" height="92"/>
+                <rect key="frame" x="0.0" y="0.0" width="382" height="104"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="362" translatesAutoresizingMaskIntoConstraints="NO" id="Px5-an-QxU">
-                        <rect key="frame" x="10" y="10.000000000000002" width="362" height="27.666666666666671"/>
+                        <rect key="frame" x="90" y="15" width="287" height="55"/>
                         <attributedString key="attributedText">
                             <fragment content="hh;aosxja;jxkjlkdsbvkbjkbcwbsdcsjkcbsjbcjsbcjksbcjkbcjkbjksdb jksbcj">
                                 <attributes>
@@ -28,30 +28,41 @@
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tEA-cV-ZTA">
+                        <rect key="frame" x="10" y="20" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="BcM-di-sEZ"/>
+                            <constraint firstAttribute="height" constant="70" id="vWQ-WU-1T6"/>
+                        </constraints>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHn-ig-sht">
-                        <rect key="frame" x="10" y="51.666666666666664" width="272" height="16.999999999999993"/>
+                        <rect key="frame" x="90" y="51" width="49" height="62"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Px5-an-QxU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="3fn-tH-7dB"/>
-                    <constraint firstAttribute="trailing" secondItem="aHn-ig-sht" secondAttribute="trailing" constant="100" id="5sP-62-nhM"/>
-                    <constraint firstAttribute="trailing" secondItem="Px5-an-QxU" secondAttribute="trailing" constant="10" id="7Mr-5A-TFX"/>
-                    <constraint firstAttribute="bottom" secondItem="aHn-ig-sht" secondAttribute="bottom" constant="23.329999999999998" id="93q-Uw-zY5"/>
-                    <constraint firstItem="aHn-ig-sht" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Mzc-4w-8lT"/>
-                    <constraint firstItem="Px5-an-QxU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Taz-Zq-OZW"/>
-                    <constraint firstItem="aHn-ig-sht" firstAttribute="top" secondItem="Px5-an-QxU" secondAttribute="bottom" constant="14" id="bJs-SR-Uk6"/>
-                    <constraint firstAttribute="bottom" secondItem="aHn-ig-sht" secondAttribute="bottom" constant="23.329999999999998" id="j8b-kP-rYw"/>
+                    <constraint firstAttribute="bottom" secondItem="aHn-ig-sht" secondAttribute="bottom" constant="-9" id="BHS-sY-KP1"/>
+                    <constraint firstItem="Px5-an-QxU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="RwB-9M-gkQ"/>
+                    <constraint firstAttribute="trailing" secondItem="Px5-an-QxU" secondAttribute="trailing" constant="5" id="W6V-gd-wJU"/>
+                    <constraint firstItem="Px5-an-QxU" firstAttribute="leading" secondItem="tEA-cV-ZTA" secondAttribute="trailing" constant="10" id="WmT-ME-syn"/>
+                    <constraint firstItem="aHn-ig-sht" firstAttribute="leading" secondItem="tEA-cV-ZTA" secondAttribute="trailing" constant="10" id="a3y-Fd-cgm"/>
+                    <constraint firstItem="aHn-ig-sht" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="51" id="fPf-LO-Akl"/>
+                    <constraint firstItem="aHn-ig-sht" firstAttribute="leading" secondItem="tEA-cV-ZTA" secondAttribute="trailing" constant="10" id="jyg-7p-8tz"/>
+                    <constraint firstAttribute="bottom" secondItem="aHn-ig-sht" secondAttribute="bottom" constant="24" id="kHV-pM-U7N"/>
+                    <constraint firstItem="tEA-cV-ZTA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="si4-oe-P6Q"/>
+                    <constraint firstItem="tEA-cV-ZTA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tRc-23-eq9"/>
+                    <constraint firstAttribute="bottom" secondItem="tEA-cV-ZTA" secondAttribute="bottom" constant="40" id="y6O-5s-K5w"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="imageViewLogo" destination="tEA-cV-ZTA" id="MJx-B6-FfZ"/>
                 <outlet property="taskDate" destination="aHn-ig-sht" id="ySZ-cc-fUa"/>
                 <outlet property="taskName" destination="Px5-an-QxU" id="4aw-ng-lvI"/>
             </connections>
-            <point key="canvasLocation" x="119.08396946564885" y="38.028169014084511"/>
+            <point key="canvasLocation" x="-155.72519083969465" y="-19.718309859154932"/>
         </tableViewCell>
     </objects>
 </document>

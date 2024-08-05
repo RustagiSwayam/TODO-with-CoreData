@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddTaskViewController" customModule="TodoCoreData" customModuleProvider="target">
+            <connections>
+                <outlet property="addButton" destination="eXs-1u-0Eb" id="upu-bm-Td7"/>
+                <outlet property="imageView" destination="iMg-OA-rf1" id="LTg-hY-GRu"/>
+                <outlet property="taskTextField" destination="h5w-iz-752" id="21V-no-rOV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iMg-OA-rf1">
+                    <rect key="frame" x="16" y="72.999999999999986" width="361" height="206.66666666666669"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="361" id="BZ6-gB-cAa"/>
+                        <constraint firstAttribute="height" constant="208" id="KhM-H4-jHC"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h5w-iz-752">
+                    <rect key="frame" x="16" y="300" width="361" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXs-1u-0Eb">
+                    <rect key="frame" x="159" y="354" width="75" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Add Task"/>
+                    <connections>
+                        <action selector="addButtonTapped:" destination="-1" eventType="touchUpInside" id="QYr-2Q-s1u"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="h5w-iz-752" firstAttribute="top" secondItem="iMg-OA-rf1" secondAttribute="bottom" constant="20" id="0Vd-io-FHZ"/>
+                <constraint firstItem="iMg-OA-rf1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="13" id="2Ro-70-1hA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h5w-iz-752" secondAttribute="trailing" constant="16" id="7pz-ja-ar5"/>
+                <constraint firstItem="h5w-iz-752" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Ore-9b-itI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eXs-1u-0Eb" secondAttribute="trailing" constant="159" id="SiO-rj-rOD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iMg-OA-rf1" secondAttribute="trailing" constant="16" id="bR0-jQ-RJF"/>
+                <constraint firstItem="eXs-1u-0Eb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="159" id="cnR-Nz-ESj"/>
+                <constraint firstItem="iMg-OA-rf1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="kHt-k3-Hpy"/>
+                <constraint firstItem="eXs-1u-0Eb" firstAttribute="top" secondItem="h5w-iz-752" secondAttribute="bottom" constant="20" id="pcU-Kr-Oom"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
